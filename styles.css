@@ -218,7 +218,7 @@ input, textarea, select { font: inherit; }
   max-width: 60ch;
 }
 
-.accent-green { color: var(--moss-green); }
+.accent-green { color: var(--apricot); }
 
 .section-header {
   text-align: center;
