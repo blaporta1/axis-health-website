@@ -4,218 +4,164 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Axis Health — Modern Care. Virtually Everywhere. Trusted, compassionate telehealth powered by innovation." />
-  <meta name="keywords" content="telehealth, healthcare, wellness, virtual care, Axis Health" />
-  <meta name="theme-color" content="#0F4C75" />
+  <meta name="theme-color" content="#000000" />
   <title>Axis Health — Modern Care. Virtually Everywhere.</title>
-
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230F4C75'/><text x='16' y='23' font-size='18' font-family='Poppins,sans-serif' font-weight='700' fill='white' text-anchor='middle'>A</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- ===== HEADER ===== -->
-  <header class="site-header" id="site-header">
-    <div class="container header-inner">
-      <a href="#hero" class="logo-link" aria-label="Axis Health homepage">
-        <img src="Axis Health Logo.png" alt="Axis Health" class="logo-img" width="148" height="44" />
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav" role="banner">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Axis Health">
+        <img src="Axis Health Logo.png" alt="Axis Health" width="120" height="36" />
       </a>
-
-      <nav class="primary-nav" aria-label="Primary">
-        <ul class="nav-list" role="list">
-          <li><a href="#about"        class="nav-link">About</a></li>
-          <li><a href="#services"     class="nav-link">Services</a></li>
-          <li><a href="#features"     class="nav-link">Features</a></li>
-          <li><a href="#why-axis"     class="nav-link">Why Us</a></li>
-          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-          <li><a href="#app"          class="nav-link">App</a></li>
-          <li><a href="#contact"      class="nav-link">Contact</a></li>
-        </ul>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about"        class="nl">About</a>
+        <a href="#features-1"   class="nl">Services</a>
+        <a href="#features-2"   class="nl">Wellness</a>
+        <a href="#app"          class="nl">App</a>
+        <a href="#testimonials" class="nl">Reviews</a>
+        <a href="#contact"      class="nl">Contact</a>
       </nav>
-
-      <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
-
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <a href="#contact" class="nav-cta" aria-label="Get started">Get Started</a>
+      <button class="nav-ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob-menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile" hidden>
-      <ul class="mobile-nav-list" role="list">
-        <li><a href="#about"        class="mobile-link">About</a></li>
-        <li><a href="#services"     class="mobile-link">Services</a></li>
-        <li><a href="#features"     class="mobile-link">Features</a></li>
-        <li><a href="#why-axis"     class="mobile-link">Why Us</a></li>
-        <li><a href="#testimonials" class="mobile-link">Reviews</a></li>
-        <li><a href="#app"          class="mobile-link">App</a></li>
-        <li><a href="#contact"      class="mobile-link">Contact</a></li>
-        <li><a href="#contact"      class="btn btn-primary mobile-cta">Get Started</a></li>
-      </ul>
-    </nav>
+    <div class="mob-menu" id="mob-menu" hidden>
+      <a href="#about"        class="ml">About</a>
+      <a href="#features-1"   class="ml">Services</a>
+      <a href="#features-2"   class="ml">Wellness</a>
+      <a href="#app"          class="ml">App</a>
+      <a href="#testimonials" class="ml">Reviews</a>
+      <a href="#contact"      class="ml">Contact</a>
+      <a href="#contact"      class="ml ml-cta">Get Started</a>
+    </div>
   </header>
 
   <main id="main">
 
     <!-- ===== HERO ===== -->
     <section class="hero" id="hero" aria-labelledby="hero-h1">
-      <!-- Dot grid -->
-      <div class="hero-dots" aria-hidden="true"></div>
-      <!-- Noise overlay -->
       <div class="hero-noise" aria-hidden="true"></div>
-      <!-- Animated geometric blobs -->
-      <div class="hero-shapes" aria-hidden="true">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-        <div class="shape shape-4"></div>
-        <div class="shape shape-5"></div>
-      </div>
-      <!-- Glow orbs -->
-      <div class="hero-orb orb-green"  aria-hidden="true"></div>
-      <div class="hero-orb orb-apricot" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
 
-      <div class="container hero-content">
-        <div class="hero-badge">
-          <span class="badge-dot" aria-hidden="true"></span>
-          Modern Care. Virtually Everywhere.
-        </div>
-
-        <h1 id="hero-h1" class="hero-headline">
+      <div class="hero-body reveal">
+        <p class="hero-eyebrow">Modern Care. Virtually Everywhere.</p>
+        <h1 id="hero-h1" class="hero-h1">
           Healthcare,<br />
-          Reimagined with<br />
-          <span class="hero-accent">Axis Health</span>
+          <span class="grad-text">Reimagined.</span>
         </h1>
-
-        <p class="hero-sub">
-          Trusted, compassionate care powered by innovation — available wherever you are, whenever you need it.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary btn-lg btn-glow">
-            Get Started
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a href="#services" class="btn btn-glass btn-lg">Explore Services</a>
-        </div>
-
-        <div class="hero-trust" aria-label="Trust indicators">
-          <div class="trust-pill">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            HIPAA Secure
-          </div>
-          <div class="trust-pill">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            24/7 Access
-          </div>
-          <div class="trust-pill">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            4.9 ★ Rated
-          </div>
-          <div class="trust-pill">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            10K+ Patients
-          </div>
+        <p class="hero-sub">Trusted. Compassionate. Innovative.<br />Available wherever life takes you.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="cta-primary">Get Started <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="#features-1" class="cta-ghost">Explore Services</a>
         </div>
       </div>
 
-      <div class="hero-scroll-cue" aria-hidden="true">
-        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <!-- Hero visual: floating cards -->
+      <div class="hero-visual reveal-slow" aria-hidden="true">
+        <div class="hv-card hv-card-1">
+          <div class="hvc-dot hvc-dot--green"></div>
+          <div class="hvc-text">
+            <div class="hvc-title">Dr. Chen — Video Visit</div>
+            <div class="hvc-sub">Starting in 2 minutes</div>
+          </div>
+          <div class="hvc-badge">Live</div>
+        </div>
+        <div class="hv-card hv-card-2">
+          <div class="hvc-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          </div>
+          <div>
+            <div class="hvc-title">HIPAA Secured</div>
+            <div class="hvc-sub">End-to-end encrypted</div>
+          </div>
+        </div>
+        <div class="hv-card hv-card-3">
+          <div class="hvc-stars">★★★★★</div>
+          <div class="hvc-title">"Axis Health changed my life."</div>
+          <div class="hvc-sub">— Sarah M., Austin TX</div>
+        </div>
+        <div class="hv-pill">
+          <span class="hv-pill-dot"></span>10,000+ patients trust Axis Health
+        </div>
       </div>
-    </section>
 
-    <!-- ===== STATS BAR ===== -->
-    <section class="stats-bar" aria-label="Key statistics">
-      <div class="container stats-inner">
-        <div class="stat-item">
-          <span class="stat-num" data-target="98">0</span><span class="stat-sym">%</span>
-          <span class="stat-label">Patient Satisfaction</span>
-        </div>
-        <div class="stat-div" aria-hidden="true"></div>
-        <div class="stat-item">
-          <span class="stat-num" data-target="10">0</span><span class="stat-sym">K+</span>
-          <span class="stat-label">Patients Served</span>
-        </div>
-        <div class="stat-div" aria-hidden="true"></div>
-        <div class="stat-item">
-          <span class="stat-num" data-target="40">0</span><span class="stat-sym">+</span>
-          <span class="stat-label">Specialties Available</span>
-        </div>
-        <div class="stat-div" aria-hidden="true"></div>
-        <div class="stat-item">
-          <span class="stat-num" data-target="8">0</span><span class="stat-sym"> min</span>
-          <span class="stat-label">Average Wait Time</span>
-        </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="scroll-m"><div class="scroll-w"></div></div>
+        <span>Scroll</span>
       </div>
     </section>
 
-    <!-- ===== ABOUT ===== -->
-    <section class="about section-pad" id="about" aria-labelledby="about-h2">
-      <div class="container">
-        <div class="about-grid">
+    <!-- ===== BRAND STRIP ===== -->
+    <section class="brand-strip" aria-label="Key values">
+      <div class="bs-inner">
+        <span class="bs-item">Trust</span>
+        <span class="bs-dot" aria-hidden="true">·</span>
+        <span class="bs-item">Compassion</span>
+        <span class="bs-dot" aria-hidden="true">·</span>
+        <span class="bs-item">Innovation</span>
+        <span class="bs-dot" aria-hidden="true">·</span>
+        <span class="bs-item">Wellness</span>
+        <span class="bs-dot" aria-hidden="true">·</span>
+        <span class="bs-item">Accessibility</span>
+        <span class="bs-dot" aria-hidden="true">·</span>
+        <span class="bs-item">Privacy</span>
+        <span class="bs-dot" aria-hidden="true">·</span>
+        <span class="bs-item">Care</span>
+      </div>
+    </section>
 
-          <div class="about-visual fade-in" aria-hidden="true">
-            <div class="about-mosaic">
-              <div class="mosaic-a">
-                <div class="mosaic-img mosaic-img--blue">
-                  <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                  <span>Patient-Centered</span>
-                </div>
-              </div>
-              <div class="mosaic-b">
-                <div class="mosaic-img mosaic-img--green">
-                  <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                  <span>Holistic Wellness</span>
-                </div>
-                <div class="mosaic-img mosaic-img--apricot">
-                  <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-                  <span>Innovation</span>
-                </div>
-              </div>
-              <div class="about-badge float-anim">
-                <span class="badge-num">98%</span>
-                <span class="badge-txt">Patient Satisfaction</span>
-              </div>
-              <div class="about-badge-2 float-anim-2">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="#68B823" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <span>4.9 Rating</span>
+    <!-- ===== FEATURE 1 — TELEHEALTH ===== -->
+    <section class="feature-section fs-dark" id="features-1" aria-labelledby="f1-h2">
+      <div class="fs-content">
+        <div class="fs-text reveal">
+          <p class="fs-eyebrow">Telehealth Consultations</p>
+          <h2 id="f1-h2" class="fs-h2">See a doctor<br /><span class="grad-text">in minutes.</span></h2>
+          <p class="fs-body">Connect with board-certified physicians via secure, HD video from your phone, tablet, or computer. No waiting rooms. No commute. Just care.</p>
+          <ul class="fs-list" role="list">
+            <li><span class="fs-check" aria-hidden="true">✓</span> 40+ specialties available</li>
+            <li><span class="fs-check" aria-hidden="true">✓</span> Average wait under 10 minutes</li>
+            <li><span class="fs-check" aria-hidden="true">✓</span> Prescriptions sent same day</li>
+          </ul>
+          <a href="#contact" class="link-cta">Learn more →</a>
+        </div>
+        <div class="fs-visual reveal-right" aria-hidden="true">
+          <div class="fv-screen">
+            <div class="fvs-topbar">
+              <div class="fvs-cam"></div>
+              <div class="fvs-title">Video Visit</div>
+              <div class="fvs-end">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.42 19.42 0 0 1 4.9 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.8 2.7h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.9 10.4a16 16 0 0 0 2.78 2.91z"/></svg>
               </div>
             </div>
-          </div>
-
-          <div class="about-text fade-in">
-            <span class="eyebrow">Our Mission</span>
-            <h2 id="about-h2" class="section-title">Compassionate Care<br />Built for the Modern World</h2>
-            <p class="body-text">At Axis Health, we believe everyone deserves access to high-quality, personalized healthcare — regardless of location, schedule, or circumstance. We bridge the gap between patients and providers through cutting-edge telehealth technology, grounded in genuine human compassion.</p>
-            <p class="body-text">Our platform empowers patients to take control of their health journey with confidence, privacy, and ease.</p>
-
-            <div class="values-row">
-              <div class="value-chip">
-                <span class="value-icon-wrap value-icon-wrap--blue" aria-hidden="true">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F4C75" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                </span>
-                Trust
+            <div class="fvs-video">
+              <div class="fvs-doc">
+                <div class="fvs-doc-avatar">Dr</div>
+                <div class="fvs-doc-info">Dr. Chen, MD<br /><span>Family Medicine</span></div>
               </div>
-              <div class="value-chip">
-                <span class="value-icon-wrap value-icon-wrap--red" aria-hidden="true">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e05a5a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                </span>
-                Compassion
+              <div class="fvs-you">You</div>
+              <div class="fvs-timer">12:34</div>
+            </div>
+            <div class="fvs-controls">
+              <div class="fvs-btn fvs-btn--red">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.42 19.42 0 0 1 4.9 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.8 2.7h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.9 10.4a16 16 0 0 0 2.78 2.91z"/></svg>
               </div>
-              <div class="value-chip">
-                <span class="value-icon-wrap value-icon-wrap--apricot" aria-hidden="true">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D68F66" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2"/></svg>
-                </span>
-                Innovation
+              <div class="fvs-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.5 16.5A3.5 3.5 0 0 1 8.5 12v-2m8 8.5H5a4 4 0 0 1-4-4 8 8 0 0 1 12-6.9M15 9.34V8a3 3 0 0 0-5.94-.6"/></svg>
               </div>
-              <div class="value-chip">
-                <span class="value-icon-wrap value-icon-wrap--green" aria-hidden="true">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg>
-                </span>
-                Wellness
+              <div class="fvs-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
               </div>
             </div>
           </div>
@@ -223,177 +169,201 @@
       </div>
     </section>
 
-    <!-- ===== SERVICES (BENTO) ===== -->
-    <section class="services section-pad section-alt" id="services" aria-labelledby="services-h2">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="eyebrow">What We Offer</span>
-          <h2 id="services-h2" class="section-title">Comprehensive Health Services</h2>
-          <p class="section-sub">From virtual consultations to preventive wellness — everything your health needs, in one place.</p>
+    <!-- ===== STATS ===== -->
+    <section class="stats-section" aria-label="Key statistics">
+      <div class="stats-grid">
+        <div class="stat-block reveal">
+          <div class="stat-n"><span class="count" data-target="98">0</span><span class="stat-unit">%</span></div>
+          <div class="stat-l">Patient Satisfaction</div>
         </div>
+        <div class="stat-block reveal">
+          <div class="stat-n"><span class="count" data-target="10">0</span><span class="stat-unit">K+</span></div>
+          <div class="stat-l">Patients Served</div>
+        </div>
+        <div class="stat-block reveal">
+          <div class="stat-n"><span class="count" data-target="40">0</span><span class="stat-unit">+</span></div>
+          <div class="stat-l">Specialties</div>
+        </div>
+        <div class="stat-block reveal">
+          <div class="stat-n"><span class="count" data-target="8">0</span><span class="stat-unit"> min</span></div>
+          <div class="stat-l">Avg. Wait Time</div>
+        </div>
+      </div>
+    </section>
 
-        <div class="bento-grid">
-          <!-- Large card -->
-          <article class="bento-card bento-card--lg bento-card--blue tilt-card fade-in" aria-labelledby="svc-tele">
-            <div class="bento-glow" aria-hidden="true"></div>
-            <div class="bento-icon" aria-hidden="true">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
-            </div>
-            <h3 id="svc-tele" class="bento-title">Telehealth<br />Consultations</h3>
-            <p class="bento-desc">Connect with licensed physicians via secure HD video — no travel, no waiting rooms.</p>
-            <a href="#contact" class="bento-link" aria-label="Learn more about telehealth">Learn more →</a>
-            <div class="bento-decoration" aria-hidden="true"></div>
-          </article>
-
-          <!-- Standard card -->
-          <article class="bento-card bento-card--green tilt-card fade-in" aria-labelledby="svc-well">
-            <div class="bento-glow" aria-hidden="true"></div>
-            <div class="bento-icon" aria-hidden="true">
-              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-            </div>
-            <h3 id="svc-well" class="bento-title">Wellness Programs</h3>
-            <p class="bento-desc">Personalized nutrition, fitness & mental wellness plans by certified professionals.</p>
-            <a href="#contact" class="bento-link" aria-label="Learn more about wellness">Learn more →</a>
-          </article>
-
-          <!-- Standard card -->
-          <article class="bento-card bento-card--apricot tilt-card fade-in" aria-labelledby="svc-prev">
-            <div class="bento-glow" aria-hidden="true"></div>
-            <div class="bento-icon" aria-hidden="true">
-              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><polyline points="9 15 11 17 15 13"/></svg>
-            </div>
-            <h3 id="svc-prev" class="bento-title">Preventive Care</h3>
-            <p class="bento-desc">Stay ahead of health risks with regular screenings and proactive care plans.</p>
-            <a href="#contact" class="bento-link" aria-label="Learn more about preventive care">Learn more →</a>
-          </article>
-
-          <!-- Wide card -->
-          <article class="bento-card bento-card--wide bento-card--dark tilt-card fade-in" aria-labelledby="svc-portal">
-            <div class="bento-glow" aria-hidden="true"></div>
-            <div class="bento-wide-inner">
+    <!-- ===== FEATURE 2 — WELLNESS ===== -->
+    <section class="feature-section fs-light" id="features-2" aria-labelledby="f2-h2">
+      <div class="fs-content fs-content--flip">
+        <div class="fs-visual fs-visual--left reveal-left" aria-hidden="true">
+          <div class="wellness-cards">
+            <div class="wc wc-1">
+              <div class="wc-icon" style="background:rgba(104,184,35,.12)">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
               <div>
-                <div class="bento-icon" aria-hidden="true">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                </div>
-                <h3 id="svc-portal" class="bento-title">Patient Portal Access</h3>
-                <p class="bento-desc">Your records, prescriptions, test results & care team — securely, from any device.</p>
+                <div class="wc-t">Wellness Score</div>
+                <div class="wc-s">84 / 100 — Excellent</div>
               </div>
-              <div class="bento-portal-features">
-                <span class="portal-tag">&#10003; Secure Records</span>
-                <span class="portal-tag">&#10003; Rx Refills</span>
-                <span class="portal-tag">&#10003; Lab Results</span>
-                <span class="portal-tag">&#10003; Team Messaging</span>
-              </div>
+              <div class="wc-prog"><div class="wc-fill" style="width:84%;background:#68B823"></div></div>
             </div>
-            <a href="#contact" class="bento-link" aria-label="Learn more about patient portal">Learn more →</a>
-          </article>
+            <div class="wc wc-2">
+              <div class="wc-icon" style="background:rgba(214,143,102,.12)">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D68F66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+              </div>
+              <div>
+                <div class="wc-t">Activity This Week</div>
+                <div class="wc-s">5 of 7 days active</div>
+              </div>
+              <div class="wc-prog"><div class="wc-fill" style="width:71%;background:#D68F66"></div></div>
+            </div>
+            <div class="wc wc-3">
+              <div class="wc-icon" style="background:rgba(15,76,117,.08)">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F4C75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <div class="wc-t">Sleep Average</div>
+                <div class="wc-s">7.8 hours · Optimal</div>
+              </div>
+              <div class="wc-prog"><div class="wc-fill" style="width:78%;background:#0F4C75"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="fs-text reveal">
+          <p class="fs-eyebrow fs-eyebrow--dark">Wellness Programs</p>
+          <h2 id="f2-h2" class="fs-h2 fs-h2--dark">Your health,<br /><span class="grad-text-warm">fully tracked.</span></h2>
+          <p class="fs-body fs-body--dark">Personalized nutrition, fitness, and mental wellness plans built by certified professionals — adapting to you in real time.</p>
+          <ul class="fs-list fs-list--dark" role="list">
+            <li><span class="fs-check fs-check--dark" aria-hidden="true">✓</span> Tailored nutrition plans</li>
+            <li><span class="fs-check fs-check--dark" aria-hidden="true">✓</span> Mental wellness coaching</li>
+            <li><span class="fs-check fs-check--dark" aria-hidden="true">✓</span> Sleep &amp; recovery tracking</li>
+          </ul>
+          <a href="#contact" class="link-cta link-cta--dark">Learn more →</a>
         </div>
       </div>
     </section>
 
-    <!-- ===== FEATURES GRID ===== -->
-    <section class="features section-pad" id="features" aria-labelledby="features-h2">
-      <div class="features-bg-track" id="features-track" aria-hidden="true"></div>
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="eyebrow">Platform Features</span>
-          <h2 id="features-h2" class="section-title">Built for How You Live</h2>
-          <p class="section-sub">Seamless, secure, and always accessible — engineered around you.</p>
+    <!-- ===== FEATURE 3 — PREVENTIVE / SECURITY ===== -->
+    <section class="feature-section fs-dark" id="features-3" aria-labelledby="f3-h2">
+      <div class="fs-content">
+        <div class="fs-text reveal">
+          <p class="fs-eyebrow">Secure &amp; Preventive Care</p>
+          <h2 id="f3-h2" class="fs-h2">Stay ahead.<br /><span class="grad-text">Stay protected.</span></h2>
+          <p class="fs-body">Proactive screenings, health assessments, and HIPAA-grade security ensure your wellbeing — and your data — are always safe.</p>
+          <ul class="fs-list" role="list">
+            <li><span class="fs-check" aria-hidden="true">✓</span> End-to-end encryption</li>
+            <li><span class="fs-check" aria-hidden="true">✓</span> Annual screenings &amp; checkups</li>
+            <li><span class="fs-check" aria-hidden="true">✓</span> Zero data sold, ever</li>
+          </ul>
+          <a href="#contact" class="link-cta">Learn more →</a>
         </div>
-
-        <div class="features-grid">
-
-          <div class="feature-card glass-card tilt-card fade-in">
-            <div class="feature-icon-wrap fc-blue" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0F4C75" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        <div class="fs-visual reveal-right" aria-hidden="true">
+          <div class="security-visual">
+            <div class="sv-shield">
+              <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
-            <h3 class="feature-title">Secure Platform</h3>
-            <p class="feature-desc">End-to-end encryption and HIPAA-compliant infrastructure protect your health data at every step.</p>
-            <div class="feature-bar feature-bar--blue"></div>
-          </div>
-
-          <div class="feature-card glass-card tilt-card fade-in">
-            <div class="feature-icon-wrap fc-green" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><polyline points="9 15 11 17 15 13"/></svg>
+            <div class="sv-ring sv-ring-1"></div>
+            <div class="sv-ring sv-ring-2"></div>
+            <div class="sv-ring sv-ring-3"></div>
+            <div class="sv-center">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
             </div>
-            <h3 class="feature-title">Easy Appointments</h3>
-            <p class="feature-desc">Book, reschedule, or cancel in seconds — real-time availability and instant confirmation.</p>
-            <div class="feature-bar feature-bar--green"></div>
-          </div>
-
-          <div class="feature-card glass-card tilt-card fade-in">
-            <div class="feature-icon-wrap fc-apricot" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D68F66" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+            <div class="sv-label">HIPAA Compliant</div>
+            <div class="sv-tags">
+              <span class="sv-tag">AES-256</span>
+              <span class="sv-tag">SOC 2</span>
+              <span class="sv-tag">TLS 1.3</span>
             </div>
-            <h3 class="feature-title">Video Visits</h3>
-            <p class="feature-desc">HD, low-latency video consultations with your care team — as easy as a phone call.</p>
-            <div class="feature-bar feature-bar--apricot"></div>
           </div>
-
-          <div class="feature-card glass-card tilt-card fade-in">
-            <div class="feature-icon-wrap fc-blue" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0F4C75" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M17 11l2 2 4-4" stroke="#68B823" stroke-width="2"/></svg>
-            </div>
-            <h3 class="feature-title">Personalized Care</h3>
-            <p class="feature-desc">AI-assisted health insights and care pathways customized to your history and goals.</p>
-            <div class="feature-bar feature-bar--blue"></div>
-          </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ===== WHY AXIS ===== -->
-    <section class="why-axis section-pad section-alt" id="why-axis" aria-labelledby="why-h2">
-      <div class="container">
-        <div class="why-grid">
-
-          <div class="why-text fade-in">
-            <span class="eyebrow">Why Axis Health</span>
-            <h2 id="why-h2" class="section-title">Medicine Meets<br />Humanity</h2>
-            <p class="body-text">Healthcare has long been fragmented, impersonal, and difficult to navigate. Axis Health was founded on the belief that technology, wielded with compassion, can change all of that.</p>
-            <p class="body-text">We combine board-certified physicians, AI-powered care coordination, and an intuitive platform to give you a healthcare experience that feels less like a system — and more like a trusted partner.</p>
-
-            <ul class="why-list" role="list">
-              <li class="why-item"><span class="why-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Board-certified physicians across 40+ specialties</li>
-              <li class="why-item"><span class="why-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Prescriptions sent directly to your pharmacy</li>
-              <li class="why-item"><span class="why-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Insurance accepted or transparent self-pay pricing</li>
-              <li class="why-item"><span class="why-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Average wait time under 10 minutes</li>
-            </ul>
-
-            <a href="#contact" class="btn btn-primary">Start Your Journey →</a>
+    <!-- ===== APP SECTION ===== -->
+    <section class="app-section" id="app" aria-labelledby="app-h2">
+      <div class="app-body">
+        <div class="app-text reveal">
+          <p class="fs-eyebrow">Axis Health App</p>
+          <h2 id="app-h2" class="fs-h2">Pocket-sized.<br /><span class="grad-text">Powerfully yours.</span></h2>
+          <p class="fs-body">Every feature of Axis Health, distilled into one beautiful app. Book visits, message your doctor, track your health, and manage prescriptions — all from your phone.</p>
+          <div class="app-store-row">
+            <a href="#" class="asp-btn" aria-label="Download on the App Store">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <div><span class="asp-sub">Download on the</span><span class="asp-name">App Store</span></div>
+            </a>
+            <a href="#" class="asp-btn" aria-label="Get it on Google Play">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.31.17.67.19 1.01.07l12.44-7.16-2.68-2.68-10.77 9.77zm-1.11-19.64C1.73 4.6 1.5 5.13 1.5 5.79v12.42c0 .66.23 1.19.57 1.57l.09.08 6.96-6.96v-.16L2.16 5.78l-.09.34zm17.63 7.77l-2.36-1.36-2.93 2.93 2.93 2.93 2.38-1.37c.68-.39.68-1.02-.02-1.13zm-15.66 9.63l10.94-6.32-2.68-2.68-8.26 9z"/></svg>
+              <div><span class="asp-sub">Get it on</span><span class="asp-name">Google Play</span></div>
+            </a>
           </div>
+        </div>
 
-          <div class="why-visual fade-in" aria-hidden="true">
-            <div class="why-cards-stack">
-              <div class="why-card why-card--1">
-                <div class="why-card-icon">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                </div>
-                <div>
-                  <div class="why-card-title">Telehealth Platform</div>
-                  <div class="why-card-sub">Connecting patients & providers</div>
-                </div>
-              </div>
-              <div class="why-card why-card--2">
-                <div class="why-card-icon why-card-icon--green">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                </div>
-                <div>
-                  <div class="why-card-title">Compassionate Care</div>
-                  <div class="why-card-sub">Human-first healthcare</div>
+        <div class="app-phones reveal-slow" aria-hidden="true">
+          <div class="ap-phone ap-phone--back">
+            <div class="ap-screen ap-screen--dark">
+              <div class="aps-notch"></div>
+              <div class="aps-health">
+                <div class="aps-label">Wellness Score</div>
+                <svg width="120" height="120" viewBox="0 0 120 120">
+                  <circle cx="60" cy="60" r="48" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="10"/>
+                  <circle cx="60" cy="60" r="48" fill="none" stroke="#68B823" stroke-width="10" stroke-dasharray="264" stroke-dashoffset="50" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                  <text x="60" y="65" text-anchor="middle" fill="white" font-size="22" font-family="Poppins" font-weight="700">84</text>
+                </svg>
+                <div class="aps-metrics">
+                  <div class="aps-m"><span style="color:#D68F66">72</span><small>bpm</small></div>
+                  <div class="aps-m"><span>7.8</span><small>hrs</small></div>
+                  <div class="aps-m"><span style="color:#68B823">6.2k</span><small>steps</small></div>
                 </div>
               </div>
-              <div class="why-card why-card--3">
-                <div class="why-card-icon why-card-icon--apricot">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+          </div>
+          <div class="ap-phone ap-phone--front">
+            <div class="ap-screen ap-screen--light">
+              <div class="aps-notch"></div>
+              <div class="aps-main">
+                <div class="aps-topbar">
+                  <span class="aps-brand">Axis Health</span>
+                  <div class="aps-av">B</div>
                 </div>
-                <div>
-                  <div class="why-card-title">HIPAA Secure</div>
-                  <div class="why-card-sub">End-to-end protected data</div>
+                <div class="aps-appt">
+                  <div class="aps-appt-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+                  </div>
+                  <div class="aps-appt-info">
+                    <div class="aps-appt-title">Video Visit</div>
+                    <div class="aps-appt-sub">Dr. Chen · Today 2PM</div>
+                  </div>
+                  <div class="aps-appt-badge">Join</div>
+                </div>
+                <div class="aps-grid">
+                  <div class="aps-tile">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F4C75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    <span>Book</span>
+                  </div>
+                  <div class="aps-tile">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    <span>Wellness</span>
+                  </div>
+                  <div class="aps-tile">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D68F66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <span>Records</span>
+                  </div>
+                  <div class="aps-tile">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9BA4B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    <span>Messages</span>
+                  </div>
+                </div>
+                <div class="aps-upcoming">
+                  <div class="aps-upl">Upcoming</div>
+                  <div class="aps-evt aps-evt--active">
+                    <div class="aps-evt-dot"></div>
+                    <div><div class="aps-evt-t">Dr. Chen — Follow-up</div><div class="aps-evt-s">Today, 2:00 PM</div></div>
+                  </div>
+                  <div class="aps-evt">
+                    <div class="aps-evt-dot aps-evt-dot--grey"></div>
+                    <div><div class="aps-evt-t">Lab Results Ready</div><div class="aps-evt-s">Tomorrow, 9:00 AM</div></div>
+                  </div>
                 </div>
               </div>
-              <div class="why-orb" aria-hidden="true"></div>
             </div>
           </div>
         </div>
@@ -401,287 +371,106 @@
     </section>
 
     <!-- ===== TESTIMONIALS ===== -->
-    <section class="testimonials section-pad" id="testimonials" aria-labelledby="test-h2">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="eyebrow">Patient Stories</span>
-          <h2 id="test-h2" class="section-title">Real People. Real Results.</h2>
-          <p class="section-sub">Thousands trust Axis Health for their care. Here's what they have to say.</p>
-        </div>
+    <section class="testimonials" id="testimonials" aria-labelledby="test-h2">
+      <div class="test-header reveal">
+        <p class="fs-eyebrow fs-eyebrow--dark">Patient Stories</p>
+        <h2 id="test-h2" class="test-h2">Real people.<br /><span class="grad-text-warm">Real results.</span></h2>
       </div>
 
-      <!-- Auto-scroll marquee row 1 -->
-      <div class="marquee-track" aria-label="Patient testimonials">
-        <div class="marquee-inner marquee-inner--fwd">
-          <!-- 8 cards (4 real + 4 duplicate for seamless loop) -->
-          <blockquote class="marquee-card">
-            <div class="mq-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mq-quote">"Axis Health completely changed how I think about going to the doctor. Consultation within 8 minutes, prescription same day — never left my couch."</p>
-            <footer class="mq-author"><span class="mq-avatar" style="background:#0F4C75">S</span><div><cite class="mq-name">Sarah M.</cite><span class="mq-role">Working Mom, Austin TX</span></div></footer>
+      <div class="test-marquee" aria-label="Patient testimonials">
+        <div class="tm-track tm-track--fwd">
+          <blockquote class="tm-card">
+            <p class="tm-q">"Axis Health completely changed how I think about going to the doctor. Consultation within 8 minutes, prescription same day."</p>
+            <footer class="tm-f"><div class="tm-av" style="background:#0F4C75">S</div><div><cite class="tm-name">Sarah M.</cite><span class="tm-role">Austin, TX</span></div><div class="tm-stars">★★★★★</div></footer>
           </blockquote>
-          <blockquote class="marquee-card">
-            <div class="mq-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mq-quote">"Managing a chronic condition is hard. Having my entire care team in one app is life-changing. The wellness programs made a real difference in my life."</p>
-            <footer class="mq-author"><span class="mq-avatar" style="background:#68B823">J</span><div><cite class="mq-name">James R.</cite><span class="mq-role">Patient, Chicago IL</span></div></footer>
+          <blockquote class="tm-card">
+            <p class="tm-q">"Managing my chronic condition is so much easier. My entire care team is in one app and the wellness programs made a real difference."</p>
+            <footer class="tm-f"><div class="tm-av" style="background:#68B823">J</div><div><cite class="tm-name">James R.</cite><span class="tm-role">Chicago, IL</span></div><div class="tm-stars">★★★★★</div></footer>
           </blockquote>
-          <blockquote class="marquee-card">
-            <div class="mq-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mq-quote">"I live rurally with limited access. Axis gave me a specialist I'd been waiting months to see — in one week. Warm, thorough, and genuinely caring."</p>
-            <footer class="mq-author"><span class="mq-avatar" style="background:#D68F66">L</span><div><cite class="mq-name">Linda K.</cite><span class="mq-role">Retired, Rural Montana</span></div></footer>
+          <blockquote class="tm-card">
+            <p class="tm-q">"I live rurally with limited access. Axis gave me a specialist I'd been waiting months to see — in one week. Genuinely caring."</p>
+            <footer class="tm-f"><div class="tm-av" style="background:#D68F66">L</div><div><cite class="tm-name">Linda K.</cite><span class="tm-role">Rural, MT</span></div><div class="tm-stars">★★★★★</div></footer>
           </blockquote>
-          <blockquote class="marquee-card">
-            <div class="mq-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mq-quote">"The mental wellness program felt personalized, not generic. My therapist remembers our progress. Truly remarkable platform — I recommend it to everyone."</p>
-            <footer class="mq-author"><span class="mq-avatar" style="background:#2F3640">D</span><div><cite class="mq-name">David T.</cite><span class="mq-role">Engineer, Seattle WA</span></div></footer>
+          <blockquote class="tm-card">
+            <p class="tm-q">"The mental wellness program felt completely personalized. My therapist remembers every session. Truly remarkable platform."</p>
+            <footer class="tm-f"><div class="tm-av" style="background:#2F3640">D</div><div><cite class="tm-name">David T.</cite><span class="tm-role">Seattle, WA</span></div><div class="tm-stars">★★★★★</div></footer>
           </blockquote>
-          <!-- Duplicates -->
-          <blockquote class="marquee-card" aria-hidden="true">
-            <div class="mq-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mq-quote">"Axis Health completely changed how I think about going to the doctor. Consultation within 8 minutes, prescription same day — never left my couch."</p>
-            <footer class="mq-author"><span class="mq-avatar" style="background:#0F4C75">S</span><div><cite class="mq-name">Sarah M.</cite><span class="mq-role">Working Mom, Austin TX</span></div></footer>
+          <blockquote class="tm-card">
+            <p class="tm-q">"Refilled my prescription in 3 minutes. The interface is clean, fast, and actually enjoyable to use. Sets the bar for digital health."</p>
+            <footer class="tm-f"><div class="tm-av" style="background:#0F4C75">M</div><div><cite class="tm-name">Marcus W.</cite><span class="tm-role">Miami, FL</span></div><div class="tm-stars">★★★★★</div></footer>
           </blockquote>
-          <blockquote class="marquee-card" aria-hidden="true">
-            <div class="mq-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mq-quote">"Managing a chronic condition is hard. Having my entire care team in one app is life-changing. The wellness programs made a real difference in my life."</p>
-            <footer class="mq-author"><span class="mq-avatar" style="background:#68B823">J</span><div><cite class="mq-name">James R.</cite><span class="mq-role">Patient, Chicago IL</span></div></footer>
-          </blockquote>
-          <blockquote class="marquee-card" aria-hidden="true">
-            <div class="mq-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mq-quote">"I live rurally with limited access. Axis gave me a specialist I'd been waiting months to see — in one week. Warm, thorough, and genuinely caring."</p>
-            <footer class="mq-author"><span class="mq-avatar" style="background:#D68F66">L</span><div><cite class="mq-name">Linda K.</cite><span class="mq-role">Retired, Rural Montana</span></div></footer>
-          </blockquote>
-          <blockquote class="marquee-card" aria-hidden="true">
-            <div class="mq-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mq-quote">"The mental wellness program felt personalized, not generic. My therapist remembers our progress. Truly remarkable platform — I recommend it to everyone."</p>
-            <footer class="mq-author"><span class="mq-avatar" style="background:#2F3640">D</span><div><cite class="mq-name">David T.</cite><span class="mq-role">Engineer, Seattle WA</span></div></footer>
-          </blockquote>
-        </div>
-      </div>
-
-      <!-- Row 2 reverse -->
-      <div class="marquee-track marquee-track--rev" aria-hidden="true">
-        <div class="marquee-inner marquee-inner--rev">
-          <blockquote class="marquee-card marquee-card--alt">
-            <div class="mq-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mq-quote">"Refilled my prescription in 3 minutes. The interface is clean, fast, and actually enjoyable to use. Axis Health sets the bar for digital health."</p>
-            <footer class="mq-author"><span class="mq-avatar" style="background:#0F4C75">M</span><div><cite class="mq-name">Marcus W.</cite><span class="mq-role">Entrepreneur, Miami FL</span></div></footer>
-          </blockquote>
-          <blockquote class="marquee-card marquee-card--alt">
-            <div class="mq-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mq-quote">"As a nurse, I'm critical of health apps. Axis Health earned my trust — the clinical quality is outstanding and the UX doesn't get in the way."</p>
-            <footer class="mq-author"><span class="mq-avatar" style="background:#68B823">A</span><div><cite class="mq-name">Amanda F.</cite><span class="mq-role">RN, Boston MA</span></div></footer>
-          </blockquote>
-          <blockquote class="marquee-card marquee-card--alt">
-            <div class="mq-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mq-quote">"My family of five uses Axis Health. We can manage everyone's care in one place. The preventive programs alone have saved us two ER visits."</p>
-            <footer class="mq-author"><span class="mq-avatar" style="background:#D68F66">R</span><div><cite class="mq-name">Rachel P.</cite><span class="mq-role">Parent, Dallas TX</span></div></footer>
-          </blockquote>
-          <blockquote class="marquee-card marquee-card--alt">
-            <div class="mq-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mq-quote">"The video quality is incredible. It actually feels like an in-person visit. I've referred my entire extended family to Axis Health."</p>
-            <footer class="mq-author"><span class="mq-avatar" style="background:#2F3640">K</span><div><cite class="mq-name">Kevin O.</cite><span class="mq-role">Retired, Phoenix AZ</span></div></footer>
-          </blockquote>
-          <!-- Duplicates -->
-          <blockquote class="marquee-card marquee-card--alt">
-            <div class="mq-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mq-quote">"Refilled my prescription in 3 minutes. The interface is clean, fast, and actually enjoyable to use. Axis Health sets the bar for digital health."</p>
-            <footer class="mq-author"><span class="mq-avatar" style="background:#0F4C75">M</span><div><cite class="mq-name">Marcus W.</cite><span class="mq-role">Entrepreneur, Miami FL</span></div></footer>
-          </blockquote>
-          <blockquote class="marquee-card marquee-card--alt">
-            <div class="mq-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mq-quote">"As a nurse, I'm critical of health apps. Axis Health earned my trust — the clinical quality is outstanding and the UX doesn't get in the way."</p>
-            <footer class="mq-author"><span class="mq-avatar" style="background:#68B823">A</span><div><cite class="mq-name">Amanda F.</cite><span class="mq-role">RN, Boston MA</span></div></footer>
-          </blockquote>
-          <blockquote class="marquee-card marquee-card--alt">
-            <div class="mq-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mq-quote">"My family of five uses Axis Health. We can manage everyone's care in one place. The preventive programs alone have saved us two ER visits."</p>
-            <footer class="mq-author"><span class="mq-avatar" style="background:#D68F66">R</span><div><cite class="mq-name">Rachel P.</cite><span class="mq-role">Parent, Dallas TX</span></div></footer>
-          </blockquote>
-          <blockquote class="marquee-card marquee-card--alt">
-            <div class="mq-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="mq-quote">"The video quality is incredible. It actually feels like an in-person visit. I've referred my entire extended family to Axis Health."</p>
-            <footer class="mq-author"><span class="mq-avatar" style="background:#2F3640">K</span><div><cite class="mq-name">Kevin O.</cite><span class="mq-role">Retired, Phoenix AZ</span></div></footer>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== APP PREVIEW ===== -->
-    <section class="app-section section-pad" id="app" aria-labelledby="app-h2">
-      <div class="app-mesh" aria-hidden="true"></div>
-      <div class="container">
-        <div class="app-grid">
-
-          <div class="app-text fade-in">
-            <span class="eyebrow eyebrow--light">Axis Health App</span>
-            <h2 id="app-h2" class="section-title section-title--light">Your Health,<br />In Your Pocket</h2>
-            <p class="body-text body-text--light">The Axis Health app puts your entire care experience at your fingertips — book appointments, join video visits, review lab results, and message your care team from anywhere.</p>
-
-            <ul class="app-list" role="list">
-              <li class="app-list-item"><span class="app-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Instant provider messaging</li>
-              <li class="app-list-item"><span class="app-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Prescription management &amp; refills</li>
-              <li class="app-list-item"><span class="app-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Health tracking &amp; wellness goals</li>
-              <li class="app-list-item"><span class="app-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Secure document storage</li>
-            </ul>
-
-            <div class="store-row">
-              <a href="#" class="store-btn" aria-label="Download on the App Store">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                <div><span class="store-sub">Download on the</span><span class="store-name">App Store</span></div>
-              </a>
-              <a href="#" class="store-btn" aria-label="Get it on Google Play">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.31.17.67.19 1.01.07l12.44-7.16-2.68-2.68-10.77 9.77zm-1.11-19.64C1.73 4.6 1.5 5.13 1.5 5.79v12.42c0 .66.23 1.19.57 1.57l.09.08 6.96-6.96v-.16L2.16 5.78l-.09.34zm17.63 7.77l-2.36-1.36-2.93 2.93 2.93 2.93 2.38-1.37c.68-.39.68-1.02-.02-1.13zm-15.66 9.63l10.94-6.32-2.68-2.68-8.26 9z"/></svg>
-                <div><span class="store-sub">Get it on</span><span class="store-name">Google Play</span></div>
-              </a>
-            </div>
-          </div>
-
-          <div class="app-visual fade-in" aria-hidden="true">
-            <div class="phones-wrap">
-              <!-- Back phone -->
-              <div class="phone phone--back">
-                <div class="phone-inner">
-                  <div class="phone-notch"></div>
-                  <div class="app-screen-alt">
-                    <div class="asa-header">
-                      <div class="asa-title">My Health</div>
-                      <div class="asa-dots"><span></span><span></span><span></span></div>
-                    </div>
-                    <div class="asa-ring-wrap">
-                      <svg width="100" height="100" viewBox="0 0 100 100">
-                        <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8"/>
-                        <circle cx="50" cy="50" r="40" fill="none" stroke="#68B823" stroke-width="8" stroke-dasharray="220" stroke-dashoffset="50" stroke-linecap="round"/>
-                        <text x="50" y="55" text-anchor="middle" fill="white" font-size="16" font-family="Poppins" font-weight="700">84</text>
-                      </svg>
-                      <div class="asa-ring-label">Wellness Score</div>
-                    </div>
-                    <div class="asa-metrics">
-                      <div class="asa-metric"><div class="asa-metric-val" style="color:#D68F66">72<small>bpm</small></div><div class="asa-metric-label">Heart Rate</div></div>
-                      <div class="asa-metric"><div class="asa-metric-val">8<small>hrs</small></div><div class="asa-metric-label">Sleep</div></div>
-                      <div class="asa-metric"><div class="asa-metric-val" style="color:#68B823">6.2<small>k</small></div><div class="asa-metric-label">Steps</div></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Front phone -->
-              <div class="phone phone--front float-anim">
-                <div class="phone-inner">
-                  <div class="phone-notch"></div>
-                  <div class="app-screen">
-                    <div class="as-topbar">
-                      <div class="as-logo">Axis Health</div>
-                      <div class="as-avatar">B</div>
-                    </div>
-                    <div class="as-appt-card">
-                      <div class="as-appt-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
-                      <div class="as-appt-info"><div class="as-appt-title">Video Visit</div><div class="as-appt-sub">Dr. Chen · 2:00 PM</div></div>
-                      <span class="as-appt-badge">Today</span>
-                    </div>
-                    <div class="as-section-lbl">Quick Actions</div>
-                    <div class="as-actions">
-                      <div class="as-action"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F4C75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Book</span></div>
-                      <div class="as-action"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#68B823" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span>Wellness</span></div>
-                      <div class="as-action"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D68F66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Records</span></div>
-                      <div class="as-action"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9BA4B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>Chat</span></div>
-                    </div>
-                    <div class="as-section-lbl">Upcoming</div>
-                    <div class="as-timeline">
-                      <div class="as-tl-item as-tl-item--active"><div class="as-tl-dot"></div><div class="as-tl-text"><div class="as-tl-title">Dr. Chen — Follow-up</div><div class="as-tl-time">Today, 2:00 PM</div></div></div>
-                      <div class="as-tl-item"><div class="as-tl-dot as-tl-dot--grey"></div><div class="as-tl-text"><div class="as-tl-title">Lab Results Ready</div><div class="as-tl-time">Tomorrow, 9:00 AM</div></div></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- Duplicates for seamless loop -->
+          <blockquote class="tm-card" aria-hidden="true"><p class="tm-q">"Axis Health completely changed how I think about going to the doctor. Consultation within 8 minutes, prescription same day."</p><footer class="tm-f"><div class="tm-av" style="background:#0F4C75">S</div><div><cite class="tm-name">Sarah M.</cite><span class="tm-role">Austin, TX</span></div><div class="tm-stars">★★★★★</div></footer></blockquote>
+          <blockquote class="tm-card" aria-hidden="true"><p class="tm-q">"Managing my chronic condition is so much easier. My entire care team is in one app and the wellness programs made a real difference."</p><footer class="tm-f"><div class="tm-av" style="background:#68B823">J</div><div><cite class="tm-name">James R.</cite><span class="tm-role">Chicago, IL</span></div><div class="tm-stars">★★★★★</div></footer></blockquote>
+          <blockquote class="tm-card" aria-hidden="true"><p class="tm-q">"I live rurally with limited access. Axis gave me a specialist I'd been waiting months to see — in one week. Genuinely caring."</p><footer class="tm-f"><div class="tm-av" style="background:#D68F66">L</div><div><cite class="tm-name">Linda K.</cite><span class="tm-role">Rural, MT</span></div><div class="tm-stars">★★★★★</div></footer></blockquote>
+          <blockquote class="tm-card" aria-hidden="true"><p class="tm-q">"The mental wellness program felt completely personalized. My therapist remembers every session. Truly remarkable platform."</p><footer class="tm-f"><div class="tm-av" style="background:#2F3640">D</div><div><cite class="tm-name">David T.</cite><span class="tm-role">Seattle, WA</span></div><div class="tm-stars">★★★★★</div></footer></blockquote>
+          <blockquote class="tm-card" aria-hidden="true"><p class="tm-q">"Refilled my prescription in 3 minutes. The interface is clean, fast, and actually enjoyable to use. Sets the bar for digital health."</p><footer class="tm-f"><div class="tm-av" style="background:#0F4C75">M</div><div><cite class="tm-name">Marcus W.</cite><span class="tm-role">Miami, FL</span></div><div class="tm-stars">★★★★★</div></footer></blockquote>
         </div>
       </div>
     </section>
 
     <!-- ===== CONTACT ===== -->
-    <section class="contact section-pad section-alt" id="contact" aria-labelledby="contact-h2">
-      <div class="container">
-        <div class="contact-grid">
-
-          <div class="contact-info fade-in">
-            <span class="eyebrow">Get In Touch</span>
-            <h2 id="contact-h2" class="section-title">We're Here<br />When You Need Us</h2>
-            <p class="body-text">Have questions about services, plans, or the platform? Our care team is ready to help you start your health journey.</p>
-
-            <div class="contact-cards">
-              <a href="tel:+18005550100" class="contact-card">
-                <div class="contact-card-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F4C75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.58 1.25h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.82-.82a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                </div>
-                <div><span class="cc-label">Phone</span><span class="cc-value">+1 (800) 555-0100</span></div>
-                <svg class="cc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-              <a href="mailto:support@axishealth.com" class="contact-card">
-                <div class="contact-card-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F4C75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                </div>
-                <div><span class="cc-label">Email</span><span class="cc-value">support@axishealth.com</span></div>
-                <svg class="cc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-              <div class="contact-card">
-                <div class="contact-card-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F4C75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                </div>
-                <div><span class="cc-label">Support Hours</span><span class="cc-value">24/7 · 365 Days</span></div>
-              </div>
+    <section class="contact-section" id="contact" aria-labelledby="contact-h2">
+      <div class="contact-inner">
+        <div class="contact-left reveal">
+          <p class="fs-eyebrow fs-eyebrow--dark">Get In Touch</p>
+          <h2 id="contact-h2" class="contact-h2">We're here.<br /><span class="grad-text-warm">Always.</span></h2>
+          <p class="fs-body fs-body--dark">Questions about services, insurance, or anything else? Our care team responds within one business day.</p>
+          <div class="contact-info-list">
+            <a href="tel:+18005550100" class="ci-item">
+              <div class="ci-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F4C75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.58 1.25h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.82-.82a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div><div class="ci-label">Phone</div><div class="ci-val">+1 (800) 555-0100</div></div>
+            </a>
+            <a href="mailto:support@axishealth.com" class="ci-item">
+              <div class="ci-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F4C75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <div><div class="ci-label">Email</div><div class="ci-val">support@axishealth.com</div></div>
+            </a>
+            <div class="ci-item">
+              <div class="ci-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F4C75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+              <div><div class="ci-label">Hours</div><div class="ci-val">24 / 7 · 365 Days</div></div>
             </div>
           </div>
-
-          <div class="contact-form-wrap fade-in">
-            <form id="contact-form" class="contact-form" novalidate aria-label="Contact form">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="f-name" class="form-label">Full Name <span class="req" aria-hidden="true">*</span></label>
-                  <input type="text" id="f-name" name="name" class="form-input" placeholder="Your full name" autocomplete="name" required aria-required="true" aria-describedby="e-name" />
-                  <span id="e-name" class="field-error" role="alert" aria-live="polite"></span>
-                </div>
-                <div class="form-group">
-                  <label for="f-email" class="form-label">Email <span class="req" aria-hidden="true">*</span></label>
-                  <input type="email" id="f-email" name="email" class="form-input" placeholder="you@example.com" autocomplete="email" required aria-required="true" aria-describedby="e-email" />
-                  <span id="e-email" class="field-error" role="alert" aria-live="polite"></span>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="f-phone" class="form-label">Phone</label>
-                <input type="tel" id="f-phone" name="phone" class="form-input" placeholder="(555) 000-0000" autocomplete="tel" />
-              </div>
-              <div class="form-group">
-                <label for="f-subject" class="form-label">Subject <span class="req" aria-hidden="true">*</span></label>
-                <select id="f-subject" name="subject" class="form-input form-select" required aria-required="true" aria-describedby="e-subject">
-                  <option value="">Select a topic…</option>
-                  <option value="general">General Inquiry</option>
-                  <option value="telehealth">Telehealth Services</option>
-                  <option value="wellness">Wellness Programs</option>
-                  <option value="billing">Billing &amp; Insurance</option>
-                  <option value="technical">Technical Support</option>
-                  <option value="partnership">Partnership</option>
-                </select>
-                <span id="e-subject" class="field-error" role="alert" aria-live="polite"></span>
-              </div>
-              <div class="form-group">
-                <label for="f-message" class="form-label">Message <span class="req" aria-hidden="true">*</span></label>
-                <textarea id="f-message" name="message" class="form-input form-textarea" placeholder="How can we help you?" rows="5" required aria-required="true" aria-describedby="e-message"></textarea>
-                <span id="e-message" class="field-error" role="alert" aria-live="polite"></span>
-              </div>
-              <div id="form-success" class="form-success" role="alert" aria-live="polite" hidden>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                Thank you! We'll be in touch within one business day.
-              </div>
-              <button type="submit" class="btn btn-primary btn-full" id="form-submit">
-                <span class="btn-text">Send Message</span>
-                <span class="btn-loader" hidden aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="spin"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                </span>
-              </button>
-            </form>
-          </div>
-
         </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate aria-label="Contact form">
+          <div class="cf-row">
+            <div class="cf-group">
+              <label for="cf-name" class="cf-label">Name <span aria-hidden="true" class="cf-req">*</span></label>
+              <input type="text" id="cf-name" name="name" class="cf-input" placeholder="Your full name" autocomplete="name" required aria-required="true" aria-describedby="ce-name" />
+              <span id="ce-name" class="cf-err" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="cf-group">
+              <label for="cf-email" class="cf-label">Email <span aria-hidden="true" class="cf-req">*</span></label>
+              <input type="email" id="cf-email" name="email" class="cf-input" placeholder="you@example.com" autocomplete="email" required aria-required="true" aria-describedby="ce-email" />
+              <span id="ce-email" class="cf-err" role="alert" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="cf-group">
+            <label for="cf-subject" class="cf-label">Subject <span aria-hidden="true" class="cf-req">*</span></label>
+            <select id="cf-subject" name="subject" class="cf-input cf-sel" required aria-required="true" aria-describedby="ce-subject">
+              <option value="">Select a topic…</option>
+              <option value="general">General Inquiry</option>
+              <option value="telehealth">Telehealth Services</option>
+              <option value="wellness">Wellness Programs</option>
+              <option value="billing">Billing &amp; Insurance</option>
+              <option value="technical">Technical Support</option>
+            </select>
+            <span id="ce-subject" class="cf-err" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="cf-group">
+            <label for="cf-msg" class="cf-label">Message <span aria-hidden="true" class="cf-req">*</span></label>
+            <textarea id="cf-msg" name="message" class="cf-input cf-ta" placeholder="How can we help you?" rows="5" required aria-required="true" aria-describedby="ce-msg"></textarea>
+            <span id="ce-msg" class="cf-err" role="alert" aria-live="polite"></span>
+          </div>
+          <div id="cf-success" class="cf-success" role="alert" aria-live="polite" hidden>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Thank you! We'll be in touch within one business day.
+          </div>
+          <button type="submit" class="cf-submit" id="cf-btn">
+            <span class="cf-btn-text">Send Message</span>
+            <span class="cf-btn-spin" hidden aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="spin"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+          </button>
+        </form>
       </div>
     </section>
 
@@ -689,69 +478,50 @@
 
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner-bg" aria-hidden="true"></div>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="#hero" class="footer-logo-link" aria-label="Axis Health homepage">
-            <img src="Axis Health Logo.png" alt="Axis Health" class="footer-logo" width="130" height="40" />
-          </a>
-          <p class="footer-tagline">Modern Care. Virtually Everywhere.</p>
-          <div class="footer-social" aria-label="Social media">
-            <a href="#" class="social-btn" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-            <a href="#" class="social-btn" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
-            <a href="#" class="social-btn" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-            <a href="#" class="social-btn" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-          </div>
-        </div>
-
-        <nav class="footer-nav" aria-label="Services links">
-          <h3 class="footer-nav-title">Services</h3>
-          <ul role="list">
-            <li><a href="#services" class="footer-link">Telehealth Consultations</a></li>
-            <li><a href="#services" class="footer-link">Wellness Programs</a></li>
-            <li><a href="#services" class="footer-link">Preventive Care</a></li>
-            <li><a href="#services" class="footer-link">Patient Portal</a></li>
-            <li><a href="#app"      class="footer-link">Mobile App</a></li>
-          </ul>
-        </nav>
-
-        <nav class="footer-nav" aria-label="Company links">
-          <h3 class="footer-nav-title">Company</h3>
-          <ul role="list">
-            <li><a href="#about"        class="footer-link">About Us</a></li>
-            <li><a href="#why-axis"     class="footer-link">Why Axis Health</a></li>
-            <li><a href="#testimonials" class="footer-link">Patient Stories</a></li>
-            <li><a href="#contact"      class="footer-link">Careers</a></li>
-            <li><a href="#contact"      class="footer-link">Press</a></li>
-          </ul>
-        </nav>
-
-        <nav class="footer-nav" aria-label="Support links">
-          <h3 class="footer-nav-title">Support</h3>
-          <ul role="list">
-            <li><a href="#contact" class="footer-link">Help Center</a></li>
-            <li><a href="#contact" class="footer-link">Contact Us</a></li>
-            <li><a href="#"        class="footer-link">Privacy Policy</a></li>
-            <li><a href="#"        class="footer-link">Terms of Service</a></li>
-            <li><a href="#"        class="footer-link">HIPAA Notice</a></li>
-          </ul>
-        </nav>
+    <div class="footer-top">
+      <div class="ft-brand">
+        <a href="#hero" aria-label="Axis Health homepage">
+          <img src="Axis Health Logo.png" alt="Axis Health" class="ft-logo" width="120" height="36" />
+        </a>
+        <p class="ft-tag">Modern Care. Virtually Everywhere.</p>
       </div>
-
-      <div class="footer-bottom">
-        <p class="footer-copy">&copy; 2026 Axis Health. All rights reserved. Not a substitute for emergency medical care.</p>
-        <div class="footer-badges">
-          <span class="footer-badge">HIPAA Compliant</span>
-          <span class="footer-badge">SOC 2 Certified</span>
-          <span class="footer-badge">ADA Accessible</span>
+      <div class="ft-navs">
+        <div class="ft-col">
+          <div class="ft-col-title">Services</div>
+          <a href="#features-1" class="ft-link">Telehealth</a>
+          <a href="#features-2" class="ft-link">Wellness</a>
+          <a href="#features-3" class="ft-link">Preventive Care</a>
+          <a href="#app"        class="ft-link">Mobile App</a>
         </div>
+        <div class="ft-col">
+          <div class="ft-col-title">Company</div>
+          <a href="#about"        class="ft-link">About</a>
+          <a href="#testimonials" class="ft-link">Patient Stories</a>
+          <a href="#contact"      class="ft-link">Careers</a>
+          <a href="#contact"      class="ft-link">Press</a>
+        </div>
+        <div class="ft-col">
+          <div class="ft-col-title">Legal</div>
+          <a href="#" class="ft-link">Privacy Policy</a>
+          <a href="#" class="ft-link">Terms of Service</a>
+          <a href="#" class="ft-link">HIPAA Notice</a>
+          <a href="#" class="ft-link">Accessibility</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="fb-copy">Copyright © 2026 Axis Health Inc. All rights reserved. Not a substitute for emergency care.</p>
+      <div class="fb-social" aria-label="Social media">
+        <a href="#" class="fb-s" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" class="fb-s" aria-label="Twitter"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+        <a href="#" class="fb-s" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="#" class="fb-s" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
       </div>
     </div>
   </footer>
 
   <button class="btt" id="btt" aria-label="Back to top" hidden>
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
 
   <script src="script.js"></script>
